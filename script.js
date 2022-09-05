@@ -221,3 +221,15 @@ function onMouseLeave() {
     pointerY = null;
 
 }
+
+var app = document.getElementById("autoWrite");
+
+var typewriter = new Typewriter(app, {
+    strings: [
+        "Front-end Developer",
+        "IT Student",
+        "Video Editor",
+    ],
+    loop: true,
+    autoStart: true,
+});
