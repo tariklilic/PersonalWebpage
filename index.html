@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> Roboto Mono -->
+    <link rel="stylesheet" href="flickity/flickity.css">
 </head>
 
 <body style="font-family: 'Roboto Mono', serif;">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div id="aboutmesection" style="height: 100%;" class="text-white text-center align-items-center">
+    <div id="aboutmesection" style="height: 100vh;" class="text-white text-center align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col h1 mt-2 mb-5">
@@ -72,52 +72,68 @@
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
-                <div class="col mb-4">
-                    <img src="images/tarik.png" alt="me" style="max-width: 400px; max-height: 450px;">
+                <div class="col mb-5">
+                    <img id="me" src="images/tarik.png" alt="me" style="max-width: 400px; max-height: 450px;">
                 </div>
             </div>
-            <div class="row mt-5 mb-4 align-items-center">
+            <div class="row mt-5 mb-5 align-items-center">
                 <div class="col h3">
                     What I like to work with
                 </div>
             </div>
-            <div class="row align-items-center text-center">
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-javascript'></i>
-                        Javascript
-                    </div>
+            <div class="row h4 mt-5 mb-3">
+                <div class="col-4 mt-3 mb-3">
+                    <i class='icons bx bxl-javascript'></i>
+                    Javascript
                 </div>
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-html5'></i>
-                        HTML
-                    </div>
+                <div class="col-4 mt-3 mb-3">
+                    <i class='icons bx bxl-html5'></i>
+                    HTML
                 </div>
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-html5'></i>
-                        CSS
-                    </div>
+                <div class="col-4 mt-3 mb-3">
+                    <i class='icons bx bxl-css3'></i>
+                    CSS
+                </div>
+                <div class="col mt-3 mb-3">
+                    <i class='icons bx bxs-data'></i>
+                    MySQL
+                </div>
+                <div class="col mt-3 mb-3">
+                    <i class='icons bx bxl-adobe'></i>
+                    Adobe Photoshop
+                </div>
+                <div class="col mt-3 mb-3">
+                    <i class='icons bx bxs-video-plus'></i>
+                    Vegas Pro
                 </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-bootstrap'></i>
-                        MySQL
-                    </div>
+        </div>
+    </div>
+    <div id="projectssection" class="text-white text-center align-items-center" style="height: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col h1 mt-2 mb-2">
+                    Projects
                 </div>
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-adobe'></i>
-                        Adobe Photoshop
-                    </div>
+            </div>
+            <div class="row mt-5 mb-5 align-items-center">
+                <div class="col h3">
+                    Some of the work I did
                 </div>
-                <div class="col h4 mt-3 mb-3">
-                    <div class="text-center d-flex justify-content-center">
-                        <i class='icons bx bxl-adobe'></i>
-                        Vegas Pro
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="carousel"
+                        data-flickity='{ "autoPlay": 2000, "wrapAround": true, "pauseAutoPlayOnHover": true }'>
+                        <div class="carousel-cell"
+                            style="background-image: url('images/stattrack.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="carousel-cell"
+                            style="background-image: url('images/personalwebpage.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="carousel-cell"
+                            style="background-image: url('images/freelance.jpg'); background-size: cover; background-position: center;">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,6 +141,7 @@
     </div>
 </body>
 
+<script src="flickity/flickity.pkgd.js"></script>
 <script src="script.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
 
