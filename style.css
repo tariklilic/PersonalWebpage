@@ -26,6 +26,60 @@ canvas {
     margin-top: 34vh;
 }
 
+.text {
+    text-shadow: 3px 3px 6px #000000;
+}
+
+#me {
+    text-shadow: 6px 6px 12px #000000;
+}
+
+@keyframes scaleIn {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.15;
+    }
+}
+
+@keyframes scaleInSocial {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.30;
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: scale(1.0);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.0);
+    }
+
+    to {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+    }
+}
+
+.nav-item:hover {
+    animation: scaleIn 0.5s ease-in-out forwards;
+}
+
+.carousel:hover,
+#me:hover {
+    animation: scaleIn 1s ease-in-out forwards;
+    animation: popup 0.2s ease-in-out forwards;
+}
+
+.mysocial:hover {
+    animation: scaleInSocial 0.5s ease-in-out forwards;
+}
+
 .projects {
     margin-top: 12vh;
 }
@@ -81,8 +135,54 @@ a:hover {
 
 
 @media only screen and (max-width: 600px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
     #me {
         width: 250px;
         height: 275px;
     }
+
+    .aboutmetext {
+        font-size: 10px;
+    }
+
+    .introductiontext {
+        font-size: 13px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 12px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 550px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 9vh;
+        font-size: 17px;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
 }
