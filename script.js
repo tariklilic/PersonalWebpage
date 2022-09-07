@@ -227,6 +227,7 @@ var app = document.getElementById("autoWrite");
 var typewriter = new Typewriter(app, {
     strings: [
         "Front-end Developer",
+        "Freelancer",
         "IT Student",
         "Video Editor",
     ],

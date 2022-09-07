@@ -12,18 +12,13 @@ canvas {
     height: 100%;
 }
 
-
-/* a {
+#main {
     position: absolute;
-    bottom: 2vmin;
-    right: 2vmin;
-    color: rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-} */
+    top: 38%;
+}
 
-
-#slogan {
-    margin-top: 34vh;
+.aboutmetext {
+    font-size: 18px;
 }
 
 .text {
@@ -32,6 +27,7 @@ canvas {
 
 #me {
     text-shadow: 6px 6px 12px #000000;
+    border-radius: 5%;
 }
 
 @keyframes scaleIn {
@@ -76,7 +72,7 @@ canvas {
     animation: popup 0.2s ease-in-out forwards;
 }
 
-.mysocial:hover {
+.social-icons:hover {
     animation: scaleInSocial 0.5s ease-in-out forwards;
 }
 
@@ -133,8 +129,70 @@ a:hover {
     font-size: 0px;
 }
 
+@media only screen and (max-width: 500px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
 
-@media only screen and (max-width: 600px) {
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
+    #me {
+        width: 280px;
+        height: 305px;
+    }
+
+    .aboutmetext {
+        font-size: 14px;
+    }
+
+    .introductiontext {
+        font-size: 18px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 16px;
+    }
+
+    .carousel-cell {
+        margin-top: 20%;
+        width: 100%;
+        height: 600px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 9vh;
+        font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 25%;
+        margin-bottom: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
     @keyframes scaleInMob {
         0% {
             scale: 1;
@@ -169,7 +227,7 @@ a:hover {
 
     .carousel-cell {
         width: 100%;
-        height: 550px;
+        height: 450px;
         margin-right: 5px;
         background: #8C8;
         border-radius: 5px;
@@ -177,12 +235,21 @@ a:hover {
     }
 
     .projects {
-        margin-top: 9vh;
+        margin-top: 7vh;
         font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
     }
 
     .mysocial {
         font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
 }
