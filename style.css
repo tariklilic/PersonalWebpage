@@ -14,7 +14,8 @@ canvas {
 
 #main {
     position: absolute;
-    top: 38%;
+    top: 40vh;
+    margin-left: 15%;
 }
 
 .aboutmetext {
@@ -129,6 +130,39 @@ a:hover {
     font-size: 0px;
 }
 
+
+@media only screen and (max-width: 750px) {
+    #main {
+        position: absolute;
+        top: 37vh;
+        margin-left: 0%;
+    }
+
+    #me {
+        width: 300px;
+        height: 330px;
+    }
+
+    .carousel-cell {
+        margin-top: 20%;
+        width: 100%;
+        height: 600px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .aboutmetext {
+        font-size: 15px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     @keyframes scaleInMob {
         0% {
@@ -138,6 +172,12 @@ a:hover {
         100% {
             scale: 1.07;
         }
+    }
+
+    #main {
+        position: absolute;
+        top: 37vh;
+        margin-left: 0%;
     }
 
     .nav-item:hover {
