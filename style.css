@@ -27,6 +27,11 @@ canvas {
     font-size: 25px;
 }
 
+#workwith {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
 .text {
     text-shadow: 3px 3px 6px #000000;
 }
@@ -136,7 +141,7 @@ a:hover {
     #main {
         position: absolute;
         top: 37vh;
-        margin-left: 0%;
+        margin-left: 10%;
     }
 
     #me {
@@ -167,7 +172,7 @@ a:hover {
     #main {
         position: absolute;
         top: 37vh;
-        margin-left: 0%;
+        margin-left: 5%;
     }
 
     #me {
@@ -326,7 +331,6 @@ a:hover {
     }
 }
 
-
 @media only screen and (max-width: 400px) {
     @keyframes scaleInMob {
         0% {
@@ -387,4 +391,327 @@ a:hover {
         margin-bottom: 10%;
     }
 
+}
+
+@media (min-width:1000px) and (max-height: 800px) {
+    #me {
+        width: 290px;
+        height: 320px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 400px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+}
+
+@media (min-width:1000px) and (max-height: 700px) {
+    #me {
+        width: 255px;
+        height: 280px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 350px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .aboutmetext {
+        font-size: 14px;
+    }
+
+    .introductiontext {
+        font-size: 17px;
+    }
+
+    .workicons {
+        font-size: 15px;
+    }
+
+    #workwith {
+        margin: 0px;
+    }
+
+
+}
+
+@media (min-width:1000px) and (max-height: 600px) {
+    #me {
+        width: 245px;
+        height: 260px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 330px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    #workwith {
+        margin: 0px;
+    }
+
+    #foot {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 400px) and (min-height: 800px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
+    #me {
+        width: 280px;
+        height: 295px;
+    }
+
+    .aboutmetext {
+        font-size: 13px;
+    }
+
+    .introductiontext {
+        font-size: 17px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 16px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 450px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 7vh;
+        font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #workwith {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px) and (min-height: 700px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
+    #me {
+        width: 270px;
+        height: 285px;
+    }
+
+    .aboutmetext {
+        font-size: 11px;
+    }
+
+    .introductiontext {
+        font-size: 13px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 13px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 450px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 7vh;
+        font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 401px) and (max-height: 799px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
+    #me {
+        width: 270px;
+        height: 285px;
+    }
+
+    .aboutmetext {
+        font-size: 11px;
+    }
+
+    .introductiontext {
+        font-size: 13px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 12px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 450px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 7vh;
+        font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 500px) and (max-height: 800px) {
+    @keyframes scaleInMob {
+        0% {
+            scale: 1;
+        }
+
+        100% {
+            scale: 1.07;
+        }
+    }
+
+    .nav-item:hover {
+        animation: scaleInMob 0.5s ease-in-out forwards;
+    }
+
+    #me {
+        width: 270px;
+        height: 285px;
+    }
+
+    .aboutmetext {
+        font-size: 13px;
+    }
+
+    .introductiontext {
+        font-size: 15px;
+    }
+
+    .workicons,
+    .icons {
+        font-size: 14px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 450px;
+        margin-right: 5px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+    }
+
+    .projects {
+        margin-top: 7vh;
+        font-size: 17px;
+    }
+
+    #projectstext {
+        margin-top: 10%;
+    }
+
+    .mysocial {
+        font-size: 15px;
+    }
+
+    .socialmedias {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 }
